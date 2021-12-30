@@ -3,3 +3,15 @@
 <input type="number" [(ngModel)]="add2">
 <button (click)="calcola()">=</button>
 {{risultato}}
+
+<hr>
+<h1>Lista della spesa</h1>
+Cosa vuoi comprare? 
+<input type="text" [(ngModel)]="cosa">
+<button (click)="aggiungiAllaLista()">Aggiungi</button>
+<ul>
+    <li *ngFor="let p of lista; index as i">
+        {{p}}
+        <button (click)="cancella(i)">X</button>
+    </li>
+</ul>

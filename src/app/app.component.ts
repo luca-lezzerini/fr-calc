@@ -9,4 +9,8 @@ export class AppComponent {
   risultato: number = 0;
   add1: number = 0;
   add2: number = 0;
+
+  calcola() {
+    this.risultato = this.add1 + this.add2;
+  }
 }
